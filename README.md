@@ -20,7 +20,7 @@ A simple Model Context Protocol (MCP) server providing weather data via an Expre
 
 
 ## Configuration
-- Add an API key in [index.ts](./index.ts) - line 6. Get your api key from openweathermap. If you need one PM me - (@mohaimenhasan)
+- Add an API key in here in [index.ts](https://github.com/mohaimenhasan/mcp-weather-server/blob/6be35a540fbb131fd0b2662c7ab3eca27579f9df/index.ts#L6). Get your api key from openweathermap. If you need one PM me - (@mohaimenhasan)
 
 ## Build
 
