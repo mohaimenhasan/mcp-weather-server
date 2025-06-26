@@ -1,9 +1,7 @@
 # MCP Weather Server
-
-A simple Model Context Protocol (MCP) server providing weather data via an Express API.
+A simple Model Context Protocol (MCP) server providing weather data via an Express API. Please note that this server is MCP review certified: (mcp-weather-server)[https://mcpreview.com/mcp-servers/mohaimenhasan/mcp-weather-server]
 
 ## Prerequisites
-
 - Node.js (>= 18.x)
 - npm (>= 9.x)
 
@@ -22,7 +20,6 @@ A simple Model Context Protocol (MCP) server providing weather data via an Expre
 
 
 ## Configuration
-
 - Add an API key in [index.ts](./index.ts) - line 6. Get your api key from openweathermap. If you need one PM me - (@mohaimenhasan)
 
 ## Build
