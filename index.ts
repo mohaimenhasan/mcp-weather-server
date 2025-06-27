@@ -2,27 +2,8 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 import axios from "axios";
-import { readFileSync } from "fs";
-import { join } from "path";
 
-// Try to load .env file if it exists
-try {
-  const envPath = join(process.cwd(), '.env');
-  const envContent = readFileSync(envPath, 'utf8');
-  const envLines = envContent.split('\n');
-  
-  envLines.forEach(line => {
-    const [key, value] = line.split('=');
-    if (key && value && !process.env[key]) {
-      process.env[key] = value;
-    }
-  });
-} catch (error) {
-  // .env file doesn't exist or can't be read, that's okay
-}
-
-// Get API key from environment variable or prompt user
-const API_KEY = process.env.OPENWEATHER_API_KEY || process.env.API_KEY;
+const API_KEY = process.env.OPENWEATHER_API_KEY || process.env.API_KEY || "ADD_YOUR_API_KEY_HERE"; 
 
 if (!API_KEY) {
   console.error("Error: OpenWeatherMap API key is required!");

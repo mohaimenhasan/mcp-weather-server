@@ -108,9 +108,7 @@ xdg-open install.html     # Linux
    ```
 
 2. **Set up your API key:**
-   - Create a `.env` file in the project root
-   - Add: `OPENWEATHER_API_KEY=your_api_key_here`
-   - The server will automatically load your API key
+ - In index.ts add your API key or use an env file
 
 3. **The VS Code settings are pre-configured** - just start using it!
 
