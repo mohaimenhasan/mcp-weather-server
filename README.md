@@ -4,6 +4,14 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
 
 [![MCP Review Certified](https://img.shields.io/badge/MCP-Review%20Certified-blue)](https://mcpreview.com/mcp-servers/mohaimenhasan/mcp-weather-server)
 
+## 🚀 **Super Quick Install** - One Click!
+
+[![Install in VS Code](https://img.shields.io/badge/Install%20in-VS%20Code-007acc?style=for-the-badge&logo=visual-studio-code)](vscode:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
+
+[![Install in VS Code Insiders](https://img.shields.io/badge/Install%20in-VS%20Code%20Insiders-1db954?style=for-the-badge&logo=visual-studio-code)](vscode-insiders:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
+
+> **🎯 Quick Setup:** Clone → Build → Click Button → Enter API Key → Done!
+
 ## ✨ Features
 
 - 🌍 **Global Weather Data**: Get weather information for any city worldwide
@@ -14,7 +22,39 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
 
 ## 🚀 One-Click Installation
 
-### Option 1: VS Code Workspace (Recommended)
+### 🎯 **Super Quick Method (Recommended)**
+
+1. **Clone and build:**
+   ```bash
+   git clone https://github.com/mohaimenhasan/mcp-weather-server.git
+   cd mcp-weather-server
+   npm run setup
+   ```
+
+2. **Get your API key:**
+   - Visit [OpenWeatherMap](https://openweathermap.org/api) (free account)
+   - Copy your API key
+
+3. **One-click install:**
+   - Click the install button above ⬆️ for your VS Code version
+   - VS Code will automatically configure the MCP server
+   - Enter your API key when prompted
+   - Start asking weather questions!
+
+### Alternative Installation Methods
+
+#### Option 1: Interactive Install Page
+
+Open `install.html` in your browser for a beautiful installation interface with one-click buttons!
+
+```bash
+# Open the install page
+start install.html        # Windows
+open install.html         # macOS  
+xdg-open install.html     # Linux
+```
+
+#### Option 2: VS Code Workspace Setup
 
 1. **Clone this repository:**
    ```bash
@@ -43,7 +83,7 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
    - Replace `YOUR_API_KEY_HERE` with your actual API key
    - The server configuration is ready to use
 
-### Option 2: Using Environment Variables (Recommended for Development)
+#### Option 3: Using Environment Variables (Development)
 
 1. **Clone and setup:**
    ```bash
@@ -59,7 +99,7 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
 
 3. **The VS Code settings are pre-configured** - just start using it!
 
-### Option 3: Manual Setup
+#### Option 4: Manual Setup
 
 1. **Quick setup with script:**
    ```bash
@@ -77,7 +117,7 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
    - Replace `YOUR_API_KEY_HERE` with your actual API key
    - Replace the path with your project's absolute path
 
-### Option 3: VS Code Command Palette
+#### Option 5: VS Code Command Palette
 
 1. **Install and build:**
    ```bash
@@ -135,21 +175,30 @@ npm run dev
 
 # Test the server
 npm start
+
+# Generate install URLs for your own use
+npm run install-urls
 ```
 
 ### Project Structure
 ```
 mcp-weather-server/
 ├── .vscode/
-│   ├── settings.json      # Pre-configured MCP settings
-│   ├── tasks.json         # VS Code tasks for easy setup
-│   └── inputs.json        # Input prompts for API key
-├── src/
-│   └── index.ts          # Main server code
-├── dist/                 # Compiled JavaScript (generated)
-├── mcp-config.json       # MCP configuration template
-├── setup.bat             # Windows setup script
-├── setup.sh              # Unix setup script
+│   ├── settings.json           # Pre-configured MCP settings (user-specific)
+│   ├── settings.template.json  # Template for settings.json
+│   ├── tasks.json              # VS Code tasks for easy setup
+│   ├── inputs.json             # Input prompts for API key
+│   ├── launch.json             # Debug configuration
+│   └── extensions.json         # Recommended extensions
+├── dist/                       # Compiled JavaScript (generated)
+├── index.ts                    # Main server code
+├── mcp-config.json            # MCP configuration template
+├── install.html               # Beautiful one-click install page
+├── generate-install-urls.js   # Script to generate install URLs
+├── setup.bat                  # Windows setup script
+├── setup.sh                   # Unix setup script
+├── .env                       # Environment variables (user-specific)
+├── .gitignore                 # Git ignore rules
 └── package.json
 ```
 
@@ -200,6 +249,12 @@ Weather in London: clear sky, 22°C
    - Check that the path in your MCP configuration is correct
    - Ensure the `dist/index.js` file exists after building
    - Restart VS Code after adding the server configuration
+
+5. **One-click install buttons not working:**
+   - Make sure you have VS Code or VS Code Insiders installed
+   - Try opening the install URLs manually by running `npm run install-urls`
+   - Use the `install.html` page as an alternative
+   - Ensure your project is built before clicking install buttons
 
 ### Getting Help
 
