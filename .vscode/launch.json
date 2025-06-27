@@ -7,7 +7,7 @@
       "request": "launch",
       "program": "${workspaceFolder}/dist/index.js",
       "env": {
-        "OPENWEATHER_API_KEY": "5f472b7acba333cd8a035ea85a0d4d4c"
+        "OPENWEATHER_API_KEY": "${input:openweatherApiKey}"
       },
       "console": "integratedTerminal",
       "preLaunchTask": "Build MCP Server",
