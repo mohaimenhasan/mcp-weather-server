@@ -1,0 +1,10 @@
+{
+  "inputs": [
+    {
+      "id": "openweatherApiKey",
+      "description": "Enter your OpenWeatherMap API Key",
+      "type": "promptString",
+      "password": true
+    }
+  ]
+}

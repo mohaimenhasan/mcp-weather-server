@@ -1,0 +1,14 @@
+{
+  "mcp.servers": {
+    "weather-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "${workspaceFolder}/dist/index.js"
+      ],
+      "env": {
+        "OPENWEATHER_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}
