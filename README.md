@@ -43,11 +43,9 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
 
 ### 🔗 **Method 2: One-Click URLs (If MCP Extension is Installed)**
 
-> **⚠️ Note:** These buttons should open VS Code directly, not a browser page. If they open in browser, use Method 1 above.
+[Open in Visual Studio Code](https://tinyurl.com/mcpweather) <br/>
+[Open in Visual Studio Code Insiders](https://tinyurl.com/mcpweatherinsiders)
 
-[Install in VS Code](vscode:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
-
-[Install in VS Code Insiders](vscode-insiders:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
 
 
 ## ✨ Features
