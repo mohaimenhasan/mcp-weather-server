@@ -1,8 +1,50 @@
-# 🌤️ MCP Weather Server
+# 🌤️ Enhanced MCP Weather Server v2.0
 
-A Model Context Protocol (MCP) server that provides real-time weather data for any city worldwide. Get instant weather information directly in your VS Code chat!
+A **comprehensive** Model Context Protocol (MCP) server that provides extensive weather data, forecasts, air quality, UV index, and much more! Get detailed weather information directly in your VS Code chat with 9 powerful tools.
 
 [![MCP Review Certified](https://img.shields.io/badge/MCP-Review%20Certified-blue)](https://mcpreview.com/mcp-servers/mohaimenhasan/mcp-weather-server)
+
+## 🚀 **What Makes This Special?**
+
+This isn't just another weather tool - it's a **comprehensive weather intelligence system** that provides:
+
+### 🎯 **9 Powerful Weather Tools:**
+
+1. **🌡️ Enhanced Current Weather** - Detailed conditions with emojis and comprehensive data
+2. **📅 5-Day Weather Forecast** - Complete weather predictions with trends
+3. **🌬️ Air Quality Index** - Real-time pollution levels and health warnings
+4. **☀️ UV Index & Sun Safety** - Solar radiation levels with safety recommendations
+5. **🌍 Multi-City Comparison** - Compare weather across multiple locations
+6. **🚨 Weather Alerts** - Severe weather warnings and emergency notifications
+7. **🌅 Astronomy Data** - Sunrise, sunset, day length, and astronomical information
+8. **📊 Weather Statistics** - Comprehensive trends, averages, and climate insights
+9. **🗺️ Weather Maps** - Access to radar, satellite, and weather map data
+
+### 💡 **Why Use This Tool?**
+
+**For Developers:**
+- 🏗️ **Building weather apps?** Get comprehensive data in one place
+- 🌐 **Need location-based features?** Access weather, air quality, and astronomy data
+- 📱 **Creating travel apps?** Compare weather across multiple destinations
+- 🎯 **Building outdoor apps?** Get UV index, air quality, and safety information
+
+**For Data Analysis:**
+- 📊 **Weather trends and patterns** for business intelligence
+- 🌡️ **Climate data analysis** for research projects
+- 📈 **Multi-city comparisons** for location planning
+- 🗺️ **Geographic weather mapping** for visualization projects
+
+**For Personal Use:**
+- ✈️ **Travel planning** with detailed forecasts and air quality
+- 🏃 **Outdoor activities** with UV index and weather safety
+- 🌍 **Multi-location monitoring** for family/business across cities
+- 📱 **Comprehensive weather briefings** beyond basic conditions
+
+**For Content Creation:**
+- 📝 **Weather-aware content** with detailed environmental data
+- 🎥 **Location scouting** with comprehensive weather analysis
+- 📊 **Data visualization** with rich weather statistics
+- 🌡️ **Climate storytelling** with historical and trend data
 
 > **🚨 Quick Note:** If the install buttons below open in your browser instead of VS Code, use **Method 1** below for manual configuration - it's more reliable!
 
@@ -48,13 +90,147 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
 
 
 
-## ✨ Features
+## ✨ All Features & Examples
 
-- 🌍 **Global Weather Data**: Get weather information for any city worldwide
-- 🔥 **Real-time Updates**: Fresh data from OpenWeatherMap API
-- ⚡ **One-Click Installation**: Easy setup for VS Code and VS Code Insiders
-- 🛡️ **Secure**: API key handled through environment variables
-- 🎯 **MCP Certified**: Fully compatible with Model Context Protocol
+### �️ **Enhanced Current Weather**
+```
+🌤️ Weather in London, GB
+
+🌡️ Temperature: ☀️ 22°C (feels like ☀️ 24°C)
+📊 Condition: clear sky
+💧 Humidity: 65%
+🌬️ Wind: 3.2 m/s (120°)
+👁️ Visibility: 10.0 km
+🌡️ Pressure: 1013 hPa
+📈 Min/Max: ☀️ 18°C / ☀️ 26°C
+☁️ Cloudiness: 10%
+🌅 Sunrise: 6:42:15 AM
+🌇 Sunset: 8:15:30 PM
+📍 Coordinates: 51.5074, -0.1278
+```
+
+### 📅 **5-Day Weather Forecast**
+```
+📅 5-Day Weather Forecast for Paris
+
+☀️ Day 1 - 12/27/2024
+🌡️ Temp: ☀️ 24°C (☀️ 20°C - ☀️ 28°C)
+📊 clear sky
+💧 Humidity: 68%
+🌬️ Wind: 2.1 m/s
+☁️ Clouds: 15%
+```
+
+### 🌬️ **Air Quality Index**
+```
+🌬️ Air Quality in Tokyo
+
+📊 Overall AQI: 2/5 - 🟡 Fair - Moderate air quality
+
+Pollutant Levels (μg/m³):
+� CO: 233.75
+🚗 NO: 0.01
+🚗 NO₂: 8.13
+🌫️ O₃: 78.32
+💨 SO₂: 1.64
+🏭 PM2.5: 5.15
+🏭 PM10: 8.04
+💨 NH₃: 0.63
+```
+
+### ☀️ **UV Index & Sun Safety**
+```
+☀️ UV Index for Sydney
+
+📊 Current UV Index: 7.2
+🟠 High - Protection essential
+
+Sun Safety Tips:
+🧴 Apply sunscreen (SPF 30+)
+👕 Wear protective clothing
+🕶️ Wear sunglasses and hat
+```
+
+### 🌍 **Multi-City Weather Comparison**
+```
+🌍 Weather Comparison
+
+☀️ London, GB
+🌡️ ☀️ 22°C (feels like ☀️ 24°C)
+📊 clear sky
+💧 65% humidity
+🌬️ 3.2 m/s wind
+
+🌧️ Seattle, US
+🌡️ 🌡️ 16°C (feels like 🌡️ 14°C)
+📊 moderate rain
+💧 85% humidity
+🌬️ 5.1 m/s wind
+```
+
+### 🚨 **Weather Alerts**
+```
+🚨 Weather Alerts for Miami
+
+⚠️ Alert 1: Hurricane Warning
+📅 Start: 12/27/2024, 2:00:00 PM
+📅 End: 12/28/2024, 8:00:00 AM
+📝 Hurricane conditions expected...
+🏢 Source: National Weather Service
+```
+
+### 🌅 **Astronomy Data**
+```
+🌅 Astronomy Data for Tokyo
+
+☀️ Currently: Daytime
+
+🌅 Sunrise: 6:47:12 AM
+🌇 Sunset: 4:32:45 PM
+⏰ Day Length: 9h 45m
+
+📍 Location: 35.6762°, 139.6503°
+🌍 Timezone: UTC+9
+
+⏳ Next sunset: in 3h 15m
+```
+
+### 📊 **Weather Statistics & Trends**
+```
+📊 Weather Statistics for Berlin
+
+Current Conditions:
+🌡️ Temperature: 🌡️ 18°C
+💧 Humidity: 72%
+🌡️ Pressure: 1015 hPa
+👁️ Visibility: 8.5 km
+
+24-Hour Trends:
+🌡️ Temperature Range: 🌡️ 15°C to ☀️ 21°C
+📊 Average Temperature: 🌡️ 18°C
+📈 Temperature Trend: Rising 📈
+
+💧 Average Humidity: 68.2%
+🌡️ Average Pressure: 1014.8 hPa
+📈 Pressure Trend: Rising 📈
+```
+
+### 🗺️ **Weather Maps**
+```
+🗺️ Weather Maps for New York
+
+📍 Coordinates: 40.7128, -74.0060
+
+Available Map Layers:
+�️ Precipitation: Rainfall and snow patterns
+☁️ Clouds: Cloud coverage and density
+🌡️ Temperature: Temperature distribution
+🌬️ Wind Speed: Wind patterns and speeds
+🌡️ Pressure: Atmospheric pressure systems
+
+Center Map On: Latitude 40.7128, Longitude -74.0060
+Recommended Zoom: 10 for city view
+```
 
 ### Alternative Installation Methods
 
@@ -154,19 +330,71 @@ xdg-open install.html     # Linux
    }
    ```
 
-## 🎯 Usage
+## 🎯 Usage Examples
 
 Once installed, you can ask VS Code Copilot questions like:
 
+### 🌡️ **Basic Weather Queries:**
 - "What's the weather like in London?"
-- "How's the weather in Tokyo today?"
-- "Tell me about the current weather in New York"
-- "What's the temperature in Paris?"
+- "Get me comprehensive weather data for Tokyo"
+- "Show me detailed current conditions in New York"
 
-The MCP server will automatically fetch real-time weather data and provide detailed information including:
-- Current temperature
-- Weather conditions
-- City name confirmation
+### 📅 **Forecast Queries:**
+- "What's the 5-day forecast for Paris?"
+- "Give me the weather forecast for Seattle this week"
+- "Show me a 3-day forecast for Berlin"
+
+### 🌬️ **Air Quality & Health:**
+- "What's the air quality in Beijing?"
+- "Check pollution levels in Delhi"
+- "Is the air quality safe in Los Angeles?"
+
+### ☀️ **Sun & UV Safety:**
+- "What's the UV index in Sydney?"
+- "Do I need sunscreen in Miami today?"
+- "Check sun safety for outdoor activities in Phoenix"
+
+### 🌍 **Multi-City Comparisons:**
+- "Compare weather between London, Paris, and Berlin"
+- "Which city has better weather: Miami or San Diego?"
+- "Show me weather comparison for Tokyo, Seoul, and Bangkok"
+
+### 🚨 **Weather Alerts:**
+- "Are there any weather warnings for Florida?"
+- "Check for severe weather alerts in Texas"
+- "Show me storm warnings for the East Coast"
+
+### 🌅 **Astronomy & Timing:**
+- "When does the sun rise in Moscow?"
+- "What time is sunset in Hawaii?"
+- "Show me astronomical data for Stockholm"
+
+### 📊 **Weather Analysis:**
+- "Give me weather statistics for Chicago"
+- "Show weather trends for the past 24 hours in Denver"
+- "Analyze weather patterns in San Francisco"
+
+### 🗺️ **Weather Maps:**
+- "How can I access weather radar for Dallas?"
+- "Show me weather map information for Portland"
+- "Get precipitation map data for the Pacific Northwest"
+
+### 💡 **Advanced Usage Examples:**
+
+**Travel Planning:**
+"I'm planning a trip to Rome next week. Show me the forecast, air quality, and UV index."
+
+**Outdoor Event Planning:**
+"Compare weather conditions between Austin, Nashville, and Denver for an outdoor concert."
+
+**Health & Safety:**
+"Check air quality and UV index for Los Angeles - I have respiratory issues and need safe outdoor exercise conditions."
+
+**Agricultural/Gardening:**
+"Show me detailed weather statistics and forecast for Portland - I need to plan my garden watering schedule."
+
+**Photography/Filming:**
+"Give me sunrise/sunset times and weather conditions for Yosemite for a photo shoot."
 
 ## 🛠️ Development
 
@@ -224,25 +452,144 @@ The server uses environment variables for configuration:
 
 - `OPENWEATHER_API_KEY` or `API_KEY`: Your OpenWeatherMap API key (required)
 
-## 📡 API Reference
+## 📡 Complete API Reference
 
 ### Available Tools
 
-#### `get-weather`
-Fetches current weather data for a specified city.
+#### 🌡️ `get-weather`
+**Enhanced current weather with comprehensive data**
 
 **Parameters:**
 - `city` (string): Name of the city to get weather for
 
 **Returns:**
-- Weather description
-- Current temperature in Celsius
-- City name
+- Detailed temperature with emoji indicators
+- Weather conditions with icons
+- Humidity, wind speed, visibility
+- Pressure, cloudiness, min/max temps
+- Sunrise/sunset times
+- Geographic coordinates
 
-**Example Response:**
+#### 📅 `get-forecast`
+**5-day weather forecast with detailed predictions**
+
+**Parameters:**
+- `city` (string): Name of the city to get forecast for
+- `days` (number, optional): Number of days to show (1-5, default: 5)
+
+**Returns:**
+- Daily temperature ranges with emojis
+- Weather conditions for each day
+- Humidity, wind, and cloud coverage
+- Organized by day with clear formatting
+
+#### 🌬️ `get-air-quality`
+**Air quality index and pollution data**
+
+**Parameters:**
+- `city` (string): Name of the city to get air quality for
+
+**Returns:**
+- Overall Air Quality Index (1-5 scale)
+- Detailed pollutant levels (CO, NO, NO₂, O₃, SO₂, PM2.5, PM10, NH₃)
+- Health recommendations based on AQI
+- Color-coded quality indicators
+
+#### ☀️ `get-uv-index`
+**UV index and sun safety information**
+
+**Parameters:**
+- `city` (string): Name of the city to get UV index for
+
+**Returns:**
+- Current UV index value
+- Safety level description (Low/Moderate/High/Very High/Extreme)
+- Specific sun protection recommendations
+- Time-based safety advice
+
+#### 🌍 `compare-weather`
+**Compare weather between multiple cities**
+
+**Parameters:**
+- `cities` (array of strings): Array of city names to compare (2-5 cities)
+
+**Returns:**
+- Side-by-side weather comparison
+- Temperature, conditions, humidity for each city
+- Weather emojis for quick visual reference
+- Organized display for easy comparison
+
+#### 🚨 `get-weather-alerts`
+**Severe weather alerts and warnings**
+
+**Parameters:**
+- `city` (string): Name of the city to get weather alerts for
+
+**Returns:**
+- Active weather warnings and alerts
+- Alert severity and timing
+- Detailed descriptions of weather threats
+- Official source attribution
+
+#### 🌅 `get-astronomy`
+**Detailed sunrise, sunset, and astronomical data**
+
+**Parameters:**
+- `city` (string): Name of the city to get astronomy data for
+
+**Returns:**
+- Sunrise and sunset times
+- Day length calculation
+- Current day/night status
+- Time until next sunrise/sunset
+- Geographic coordinates and timezone
+- Moon phase information (with additional API)
+
+#### 📊 `get-weather-stats`
+**Comprehensive weather statistics and trends**
+
+**Parameters:**
+- `city` (string): Name of the city to get weather statistics for
+
+**Returns:**
+- Current weather conditions summary
+- 24-hour temperature trends and ranges
+- Pressure and humidity patterns
+- Weather trend indicators (rising/falling)
+- Statistical analysis of recent conditions
+
+#### 🗺️ `get-weather-maps`
+**Weather map information and access URLs**
+
+**Parameters:**
+- `city` (string): Name of the city to get map information for
+
+**Returns:**
+- Geographic coordinates for mapping
+- Available weather layer types
+- Direct URLs for weather map tiles
+- Integration instructions for mapping libraries
+- Recommended zoom levels and center points
+
+### API Response Format
+
+All tools return responses in this format:
+```json
+{
+  "content": [{
+    "type": "text",
+    "text": "Formatted weather information with emojis and detailed data"
+  }]
+}
 ```
-Weather in London: clear sky, 22°C
-```
+
+### Error Handling
+
+The server handles various error conditions:
+- **404 Errors**: City not found - suggests checking spelling
+- **401 Errors**: Invalid API key - prompts key configuration check
+- **Network Errors**: Timeout or connection issues - suggests retrying
+- **API Limitations**: Some features require premium OpenWeatherMap subscription
 
 ## 🆘 Troubleshooting
 

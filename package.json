@@ -1,7 +1,7 @@
 {
   "name": "mcp-weather-server",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Enhanced MCP Weather Server with comprehensive weather data, forecasts, air quality, UV index, alerts, and more",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
