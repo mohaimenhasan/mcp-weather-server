@@ -43,7 +43,6 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
 
 ### 🔗 **Method 2: One-Click URLs (If MCP Extension is Installed)**
 
-[![Open in Visual Studio Code](https://open.vscode.dev/static/media/open-vscode.svg)](https://tinyurl.com/mcpweather)
 [![Open in Visual Studio Code Insiders](https://raw.githubusercontent.com/jongio/memealyzer/main/assets/open-in-vscode-insiders.svg)](https://tinyurl.com/mcpweatherinsiders)
 
 
