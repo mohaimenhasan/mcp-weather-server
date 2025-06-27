@@ -4,25 +4,11 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
 
 [![MCP Review Certified](https://img.shields.io/badge/MCP-Review%20Certified-blue)](https://mcpreview.com/mcp-servers/mohaimenhasan/mcp-weather-server)
 
-## 🚀 **Super Quick Install** - One Click!
+> **🚨 Quick Note:** If the install buttons below open in your browser instead of VS Code, use **Method 1** below for manual configuration - it's more reliable!
 
-[![Install in VS Code](https://img.shields.io/badge/Install%20in-VS%20Code-007acc?style=for-the-badge&logo=visual-studio-code)](vscode:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
+## 🚀 **Easy Installation Methods**
 
-[![Install in VS Code Insiders](https://img.shields.io/badge/Install%20in-VS%20Code%20Insiders-1db954?style=for-the-badge&logo=visual-studio-code)](vscode-insiders:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
-
-> **🎯 Quick Setup:** Clone → Build → Click Button → Enter API Key → Done!
-
-## ✨ Features
-
-- 🌍 **Global Weather Data**: Get weather information for any city worldwide
-- 🔥 **Real-time Updates**: Fresh data from OpenWeatherMap API
-- ⚡ **One-Click Installation**: Easy setup for VS Code and VS Code Insiders
-- 🛡️ **Secure**: API key handled through environment variables
-- 🎯 **MCP Certified**: Fully compatible with Model Context Protocol
-
-## 🚀 One-Click Installation
-
-### 🎯 **Super Quick Method (Recommended)**
+### 🎯 **Method 1: Manual Configuration (Most Reliable)**
 
 1. **Clone and build:**
    ```bash
@@ -35,11 +21,41 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
    - Visit [OpenWeatherMap](https://openweathermap.org/api) (free account)
    - Copy your API key
 
-3. **One-click install:**
-   - Click the install button above ⬆️ for your VS Code version
-   - VS Code will automatically configure the MCP server
-   - Enter your API key when prompted
-   - Start asking weather questions!
+3. **Add to VS Code:**
+   - Open VS Code
+   - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
+   - Type "Preferences: Open User Settings (JSON)"
+   - Add this to your settings:
+   ```json
+   {
+     "mcp.servers": {
+       "weather-mcp": {
+         "type": "stdio",
+         "command": "node",
+         "args": ["C:\\Users\\mohaimenkhan\\source\\repos\\mcp-weather-server\\dist\\index.js"],
+         "env": {
+           "OPENWEATHER_API_KEY": "your_api_key_here"
+         }
+       }
+     }
+   }
+   ```
+
+### 🔗 **Method 2: One-Click URLs (If MCP Extension is Installed)**
+
+> **⚠️ Note:** These buttons should open VS Code directly, not a browser page. If they open in browser, use Method 1 above.
+
+[![Install in VS Code](https://img.shields.io/badge/Install%20in-VS%20Code-007acc?style=for-the-badge&logo=visual-studio-code)](vscode:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
+
+[![Install in VS Code Insiders](https://img.shields.io/badge/Install%20in-VS%20Code%20Insiders-1db954?style=for-the-badge&logo=visual-studio-code)](vscode-insiders:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
+
+## ✨ Features
+
+- 🌍 **Global Weather Data**: Get weather information for any city worldwide
+- 🔥 **Real-time Updates**: Fresh data from OpenWeatherMap API
+- ⚡ **One-Click Installation**: Easy setup for VS Code and VS Code Insiders
+- 🛡️ **Secure**: API key handled through environment variables
+- 🎯 **MCP Certified**: Fully compatible with Model Context Protocol
 
 ### Alternative Installation Methods
 
@@ -178,6 +194,9 @@ npm start
 
 # Generate install URLs for your own use
 npm run install-urls
+
+# Get manual configuration for VS Code settings
+npm run config
 ```
 
 ### Project Structure
@@ -251,10 +270,12 @@ Weather in London: clear sky, 22°C
    - Restart VS Code after adding the server configuration
 
 5. **One-click install buttons not working:**
+   - **If buttons open in browser instead of VS Code:**
+     - The MCP extension might not be installed or URL handler not registered
+     - Use Method 1 (Manual Configuration) instead - it's more reliable
+     - Run `npm run config` to get the exact configuration to copy
    - Make sure you have VS Code or VS Code Insiders installed
-   - Try opening the install URLs manually by running `npm run install-urls`
-   - Use the `install.html` page as an alternative
-   - Ensure your project is built before clicking install buttons
+   - Ensure your project is built before attempting installation
 
 ### Getting Help
 
