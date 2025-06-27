@@ -47,7 +47,8 @@ A Model Context Protocol (MCP) server that provides real-time weather data for a
 
 [![Install in VS Code](https://img.shields.io/badge/Install%20in-VS%20Code-007acc?style=for-the-badge&logo=visual-studio-code)](vscode:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
 
-[![Install in VS Code Insiders](https://img.shields.io/badge/Install%20in-VS%20Code%20Insiders-1db954?style=for-the-badge&logo=visual-studio-code)](vscode-insiders:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22args%22%3A%5B%22%24%7BworkspaceFolder%7D%2Fdist%2Findex.js%22%5D%2C%22env%22%3A%7B%22OPENWEATHER_API_KEY%22%3A%22%24%7Binput%3AopenweatherApiKey%7D%22%7D%7D)
+[![Install in VS Code Insiders](https://img.shields.io/badge/Install%20in-VS%20Code%20Insiders-1db954?style=for-the-badge&logo=visual-studio-code)](vscode-insiders:mcp/install?%7B%22name%22%3A%22weather-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22node%22%2C%22a)
+
 
 ## ✨ Features
 
