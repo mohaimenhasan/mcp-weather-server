@@ -55,7 +55,7 @@ This isn't just another weather tool - it's a **comprehensive weather intelligen
 Install directly from npm with automated setup:
 
 ```bash
-npm install -g @mohaimenkhan/mcp-weather-server
+npm install -g mohaimen-weather-mcp
 install-mcp-weather
 ```
 
