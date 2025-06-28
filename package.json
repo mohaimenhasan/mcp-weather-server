@@ -1,36 +1,30 @@
 {
   "name": "mohaimen-weather-mcp",
-  "version": "2.0.5",
+  "version": "2.0.7",
   "description": "Enhanced MCP Weather Server with comprehensive weather data, forecasts, air quality, UV index, alerts, and more. Provides 9 powerful weather tools for Claude via Model Context Protocol.",
+  "author": "Mohaimen Khan",
+  "license": "MIT",
+  "type": "module",
   "main": "dist/index.js",
   "bin": {
     "install-mcp-weather": "./install.js"
   },
+  "files": [
+    "dist/",
+    "install.js",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "setup": "npm install && npm run build",
     "dev": "tsc --watch",
+    "setup": "npm install && npm run build",
     "install-urls": "node generate-install-urls.js",
     "config": "node get-config.js",
-    "prepublishOnly": "npm run build",
-    "test": "node test-weather.js"
+    "test": "node test-weather.js",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [
-    "mcp",
-    "model-context-protocol",
-    "weather",
-    "claude",
-    "ai",
-    "assistant",
-    "openweathermap",
-    "forecast",
-    "air-quality",
-    "uv-index"
-  ],
-  "author": "Mohaimen Khan",
-  "license": "MIT",
-  "type": "module",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.2",
     "axios": "^1.9.0",
@@ -44,20 +38,26 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "weather",
+    "claude",
+    "ai",
+    "assistant",
+    "openweathermap",
+    "forecast",
+    "air-quality",
+    "uv-index"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohaimenhasan/mcp-weather-server.git"
+    "url": "https://github.com/mohaimenhasan/mcp-weather-server.git"
   },
   "bugs": {
     "url": "https://github.com/mohaimenhasan/mcp-weather-server/issues"
   },
   "homepage": "https://github.com/mohaimenhasan/mcp-weather-server#readme",
-  "files": [
-    "dist/",
-    "install.js",
-    "README.md",
-    "LICENSE"
-  ],
   "engines": {
     "node": ">=18.0.0"
   }
