@@ -2,12 +2,12 @@
   "mcp.servers": {
     "weather-mcp": {
       "type": "stdio",
-      "command": "node",
+      "command": "npx",
       "args": [
-        "${workspaceFolder}/dist/index.js"
+        "mohaimen-weather-mcp"
       ],
       "env": {
-        "OPENWEATHER_API_KEY": "YOUR_API_KEY_HERE"
+        "OPENWEATHER_API_KEY": "5f472b7acba333cd8a035ea85a0d4d4c"
       }
     }
   }
