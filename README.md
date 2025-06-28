@@ -56,7 +56,21 @@ Install directly from npm with automated setup:
 
 ```bash
 npm install -g mohaimen-weather-mcp
-install-mcp-weather
+```
+
+Then in your settings just add
+
+```json
+"<name of your server>": 
+{
+   "command": "npx",
+   "args": [
+      "mohaimen-weather-mcp"
+   ],
+   "env": {
+      "OPENWEATHER_API_KEY": "<YOUR_KEY>"
+   }
+}
 ```
 
 This will:
