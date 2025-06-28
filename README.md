@@ -62,7 +62,7 @@ install-mcp-weather
 This will:
 - Install the package globally
 - Run an interactive setup that asks for your API key
-- Automatically configure VS Code settings
+- Automatically configure VS Code settings with correct paths
 - No manual configuration needed!
 
 ### 🎯 **Method 2: Manual Configuration (Most Reliable)**
@@ -97,13 +97,6 @@ This will:
    }
    ```
 
-### 🔗 **Method 3: Direct Install (Alternative)**
-
-```bash
-git clone https://github.com/mohaimenhasan/mcp-weather-server.git
-cd mcp-weather-server
-node install.js
-```
 
 
 
@@ -250,103 +243,6 @@ Center Map On: Latitude 40.7128, Longitude -74.0060
 Recommended Zoom: 10 for city view
 ```
 
-### Alternative Installation Methods
-
-#### Option 1: Interactive Install Page
-
-Open `install.html` in your browser for a beautiful installation interface with one-click buttons!
-
-```bash
-# Open the install page
-start install.html        # Windows
-open install.html         # macOS  
-xdg-open install.html     # Linux
-```
-
-#### Option 2: VS Code Workspace Setup
-
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/mohaimenhasan/mcp-weather-server.git
-   cd mcp-weather-server
-   ```
-
-2. **Open in VS Code:**
-   ```bash
-   code .
-   ```
-
-3. **Run the setup task:**
-   - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
-   - Type "Tasks: Run Task"
-   - Select "Setup MCP Server"
-   - This will automatically install dependencies and build the project
-
-4. **Get your API key:**
-   - Visit [OpenWeatherMap](https://openweathermap.org/api)
-   - Sign up for a free account
-   - Get your API key
-
-5. **The MCP server is pre-configured!** 
-   - Copy `.vscode/settings.template.json` to `.vscode/settings.json`
-   - Replace `YOUR_API_KEY_HERE` with your actual API key
-   - The server configuration is ready to use
-
-#### Option 3: Using Environment Variables (Development)
-
-1. **Clone and setup:**
-   ```bash
-   git clone https://github.com/mohaimenhasan/mcp-weather-server.git
-   cd mcp-weather-server
-   npm run setup
-   ```
-
-2. **Set up your API key:**
- - In index.ts add your API key or use an env file
-
-3. **The VS Code settings are pre-configured** - just start using it!
-
-#### Option 4: Manual Setup
-
-1. **Quick setup with script:**
-   ```bash
-   # Windows
-   setup.bat
-   
-   # macOS/Linux  
-   chmod +x setup.sh
-   ./setup.sh
-   ```
-
-2. **Add to VS Code MCP Settings:**
-   - Open VS Code Settings (JSON)
-   - Add the configuration from `mcp-config.json`
-   - Replace `YOUR_API_KEY_HERE` with your actual API key
-   - Replace the path with your project's absolute path
-
-#### Option 5: VS Code Command Palette
-
-1. **Install and build:**
-   ```bash
-   git clone https://github.com/mohaimenhasan/mcp-weather-server.git
-   cd mcp-weather-server
-   npm run setup
-   ```
-
-2. **Add MCP Server:**
-   - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
-   - Search for "MCP: Add Server"
-   - Use this configuration:
-   ```json
-   {
-     "type": "stdio",
-     "command": "node",
-     "args": ["C:\\YOUR_PATH\\mcp-weather-server\\dist\\index.js"],
-     "env": {
-       "OPENWEATHER_API_KEY": "your_api_key_here"
-     }
-   }
-   ```
 
 ## 🎯 Usage Examples
 

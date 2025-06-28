@@ -43,7 +43,15 @@ if (!apiKey.trim()) {
 rl.close();
 
 // Step 3: Generate VS Code settings
-const serverPath = resolve(__dirname, 'dist', 'index.js');
+// Get npm global prefix and construct predictable path
+let serverPath;
+try {
+  const npmPrefix = execSync('npm prefix -g', { encoding: 'utf8' }).trim();
+  serverPath = join(npmPrefix, 'node_modules', 'mohaimen-weather-mcp', 'dist', 'index.js');
+} catch (error) {
+  // Fallback to current directory method
+  serverPath = resolve(__dirname, 'dist', 'index.js');
+}
 
 const mcpConfig = {
   mcpServers: {

@@ -1,6 +1,6 @@
 {
   "name": "mohaimen-weather-mcp",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Enhanced MCP Weather Server with comprehensive weather data, forecasts, air quality, UV index, alerts, and more. Provides 9 powerful weather tools for Claude via Model Context Protocol.",
   "main": "dist/index.js",
   "bin": {
