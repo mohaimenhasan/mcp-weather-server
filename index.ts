@@ -3,7 +3,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 import axios from "axios";
 
-const API_KEY = process.env.OPENWEATHER_API_KEY || process.env.API_KEY || "5f472b7acba333cd8a035ea85a0d4d4c"; 
+const API_KEY = process.env.OPENWEATHER_API_KEY || process.env.API_KEY; 
 
 if (!API_KEY) {
   console.error("Error: OpenWeatherMap API key is required!");

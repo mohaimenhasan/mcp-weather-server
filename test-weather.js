@@ -1,7 +1,13 @@
 import axios from 'axios';
 
-const API_KEY = '5f472b7acba333cd8a035ea85a0d4d4c';
+const API_KEY = process.env.OPENWEATHER_API_KEY || process.env.API_KEY;
 const city = 'Toronto';
+
+if (!API_KEY) {
+  console.error("Error: OpenWeatherMap API key is required!");
+  console.error("Please set the OPENWEATHER_API_KEY environment variable or API_KEY environment variable.");
+  process.exit(1);
+}
 
 try {
   const response = await axios.get('https://api.openweathermap.org/data/2.5/weather', {

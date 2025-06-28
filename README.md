@@ -50,11 +50,26 @@ This isn't just another weather tool - it's a **comprehensive weather intelligen
 
 ## 🚀 **Easy Installation Methods**
 
-### 🎯 **Method 1: Manual Configuration (Most Reliable)**
+### 🎯 **Method 1: NPM Package (Recommended)**
+
+Install directly from npm with automated setup:
+
+```bash
+npm install -g @mohaimenkhan/mcp-weather-server
+install-mcp-weather
+```
+
+This will:
+- Install the package globally
+- Run an interactive setup that asks for your API key
+- Automatically configure VS Code settings
+- No manual configuration needed!
+
+### 🎯 **Method 2: Manual Configuration (Most Reliable)**
 
 1. **Clone and build:**
    ```bash
-   git clone https://github.com/mohaimenhasan/mcp-weather-server.git
+   git clone https://github.com/mohaimenkhan/mcp-weather-server.git
    cd mcp-weather-server
    npm run setup
    ```
@@ -70,11 +85,10 @@ This isn't just another weather tool - it's a **comprehensive weather intelligen
    - Add this to your settings:
    ```json
    {
-     "mcp.servers": {
-       "weather-mcp": {
-         "type": "stdio",
+     "mcpServers": {
+       "weather": {
          "command": "node",
-         "args": ["C:\\Users\\mohaimenkhan\\source\\repos\\mcp-weather-server\\dist\\index.js"],
+         "args": ["/absolute/path/to/mcp-weather-server/dist/index.js"],
          "env": {
            "OPENWEATHER_API_KEY": "your_api_key_here"
          }
@@ -83,9 +97,13 @@ This isn't just another weather tool - it's a **comprehensive weather intelligen
    }
    ```
 
-### 🔗 **Method 2: One-Click URLs (If MCP Extension is Installed)**
+### 🔗 **Method 3: Direct Install (Alternative)**
 
-[![Open in Visual Studio Code Insiders](https://raw.githubusercontent.com/jongio/memealyzer/main/assets/open-in-vscode-insiders.svg)](https://tinyurl.com/mcpweatherinsiders)
+```bash
+git clone https://github.com/mohaimenkhan/mcp-weather-server.git
+cd mcp-weather-server
+node install.js
+```
 
 
 

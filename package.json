@@ -1,19 +1,35 @@
 {
-  "name": "mcp-weather-server",
-  "version": "2.0.0",
-  "description": "Enhanced MCP Weather Server with comprehensive weather data, forecasts, air quality, UV index, alerts, and more",
-  "main": "index.js",
+  "name": "@mohaimenkhan/mcp-weather-server",
+  "version": "2.0.1",
+  "description": "Enhanced MCP Weather Server with comprehensive weather data, forecasts, air quality, UV index, alerts, and more. Provides 9 powerful weather tools for Claude via Model Context Protocol.",
+  "main": "dist/index.js",
+  "bin": {
+    "install-mcp-weather": "./install.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "setup": "npm install && npm run build",
     "dev": "tsc --watch",
     "install-urls": "node generate-install-urls.js",
-    "config": "node get-config.js"
+    "config": "node get-config.js",
+    "prepublishOnly": "npm run build",
+    "test": "node test-weather.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "weather",
+    "claude",
+    "ai",
+    "assistant",
+    "openweathermap",
+    "forecast",
+    "air-quality",
+    "uv-index"
+  ],
+  "author": "Mohaimen Khan",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.10.2",
@@ -27,5 +43,22 @@
     "@types/node": "^22.15.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohaimenkhan/mcp-weather-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohaimenkhan/mcp-weather-server/issues"
+  },
+  "homepage": "https://github.com/mohaimenkhan/mcp-weather-server#readme",
+  "files": [
+    "dist/",
+    "install.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
