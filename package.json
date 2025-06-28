@@ -46,12 +46,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohaimenkhan/mcp-weather-server.git"
+    "url": "git+https://github.com/mohaimenhasan/mcp-weather-server.git"
   },
   "bugs": {
-    "url": "https://github.com/mohaimenkhan/mcp-weather-server/issues"
+    "url": "https://github.com/mohaimenhasan/mcp-weather-server/issues"
   },
-  "homepage": "https://github.com/mohaimenkhan/mcp-weather-server#readme",
+  "homepage": "https://github.com/mohaimenhasan/mcp-weather-server#readme",
   "files": [
     "dist/",
     "install.js",

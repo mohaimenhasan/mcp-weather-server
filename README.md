@@ -69,7 +69,7 @@ This will:
 
 1. **Clone and build:**
    ```bash
-   git clone https://github.com/mohaimenkhan/mcp-weather-server.git
+   git clone https://github.com/mohaimenhasan/mcp-weather-server.git
    cd mcp-weather-server
    npm run setup
    ```
@@ -100,7 +100,7 @@ This will:
 ### 🔗 **Method 3: Direct Install (Alternative)**
 
 ```bash
-git clone https://github.com/mohaimenkhan/mcp-weather-server.git
+git clone https://github.com/mohaimenhasan/mcp-weather-server.git
 cd mcp-weather-server
 node install.js
 ```
